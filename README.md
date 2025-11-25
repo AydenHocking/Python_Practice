@@ -4,10 +4,12 @@ This is a collection of practice programs I created in Python to demonstrate dif
 
 ## Backend:
 - `.py` Python v.3.12.6
-- `.html` Webpages
-- `.css` Frontend Desgin
 - `.txt` Requirements
 - Additonal Documents Included
+
+## Frontend:
+- `.html` Webpages
+- `.css` Frontend Design
 
 ## Tools:
 - Git and GitHub for version control
