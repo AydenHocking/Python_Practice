@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Team</h1>
+    <h2>Group 15</h2>
+    <!-- Example team logo -->
+    <img src="/group_bio/img/team-logo.png" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <!-- Alejandro's Card -->
+    <div class="card alejandro-card" id="alejandro-card">
+        <h2 class="alejandro-name">Alejandro Murillo</h2>
+        <p class="alejandro-title">Backend Developer</p>
+        <button class="alejandro-button" id="button_alejandro" onclick="toggleAlejandroBio('bio-alejandro', 'alejandro-img')">Show Bio</button>
+        <div class="alejandro-content">
+            <!-- Avatar Image -->
+            <div class="image-container">
+                <img id="alejandro-img" src="img/Alejandro.png" alt="Alejandro Avatar" class="alejandro-avatar" style="display: none;">
+            </div>
+            <!-- Bio Text -->
+            <div class="bio-section">
+                <p id="bio-alejandro" class="bio" style="display: none;">
+                    Alejandro is a skilled backend developer specializing in server-side logic, database management,
+                    and API integrations. With extensive experience in Python, Django, and microservices architecture,
+                    he complements the team's diverse skillset by ensuring robust and scalable solutions.
+                </p>
+            </div>
+            <!-- Favorite Tools Section -->
+            <div class="tools-section">
+                <h3 class="section-header" style="display: none;">Favorite Tools:</h3>
+                <ul class="bio" id="tools-alejandro" style="display: none;">
+                    <li><strong>Programming:</strong> Python</li>
+                    <li><strong>Framework:</strong> Django</li>
+                    <li><strong>Database:</strong> PostgreSQL</li>
+                    <li><strong>Containerization:</strong> Docker</li>
+                    <li><strong>API:</strong> RESTful Services</li>
+                    <li><strong>Version Control:</strong> Git</li>
+                </ul>
+            </div>
+            <!-- External Links Section -->
+            <div class="links-section">
+                <h3 class="section-header" style="display: none;">Links:</h3>
+                <ul class="bio" id="links-alejandro" style="display: none;">
+                    <li><a href="https://github.com/Alealejandro1124" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/alealejandro11" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   <!-- Deeksha's Card -->
+    <div class="card deeksha-card" id="deeksha-card">
+        <h2 class="deeksha-name">Deeksha Marpadaga</h2>
+        <p class="deeksha-title">Developer</p>
+        <button class="deeksha-button" onclick="toggleDeekshaBio('bio2', 'deeksha-card')">Show Bio</button>
+        <div id="bio2" class="bio deeksha-bio">
+            <!-- Avatar -->
+            <img src="img/Deeksha.jpg" alt="Deeksha Avatar" class="deeksha-avatar">
+
+            <!-- Bio Text -->
+            <div class="deeksha-bio-text">
+                <p><strong>About:</strong><br>
+                Deeksha is a developer with a passion for creating software applications.
+                She specializes in Python and has an interest in machine learning and data visualizations.
+                In her free time, she enjoys Kaggle challenges, hackathons and exploring new technologies.</p>
+            </div>
+
+            <!-- Moodboard -->
+            <div class="deeksha-moodboard">
+                <h3>Tech Toolkit</h3>
+                <div class="moodboard-icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Python" title="Python">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/640px-R_logo.svg.png" alt="R" title="R">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsXrpPO3Izgbgjv8ytAxXeKIuWb9pQM74uPw&s" alt="Jupyter" title="Jupyter Notebook">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98EumfCtICiwQ9Wujj5I593BgGsA0IALNNQ&s" alt="Matplotlib" title="Matplotlib">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwswZJnfO4BT9Mp17jhdXSn5KaWeSLgRSO5g&s" alt="Scikit" title="scikit learn">
+                </div>
+
+                <div class="deeksha-links">
+                    <a href="https://www.kaggle.com/" target="_blank" class="kaggle-link">Kaggle</a>
+                    <a href="https://github.com/deekshamarpadaga" target="_blank" class="github-link">GitHub</a>
+                    <a href="https://docs.python.org/3/" target="_blank" class="python-link">Python</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Deeksha's Card -->
+
+<!--Divine's card-->
+    <div class="card divine-card" id="divine-card">
+        <h2>Divine Mobote</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleDivineBio('bio3', 'divine-card')">Show Bio</button>
+        <div id="bio3" class="bio">
+    <!--Image-->
+            <img src="img/divine.png" alt="Divine Avatar" class="divine-bio-avatar">
+    <!--Bio-->
+            <p><strong>About:</strong><br>
+            Divine is a UI/UX designer who pairs creative vision with user-centered thinking.
+                With a passion for user experience, she turns abstract ideas into intuitive, refined designs.
+                She finds joy in fresh wireframes, considers Figma her happy place, and takes her color palette—especially pink—very seriously.</p>
+    <!--MoodBoard-->
+            <p><strong>MoodBoard:</strong><br>
+            <img src="img/figma.png" alt="Figma" class="divine-mood-icon">
+            <img src="img/ui-wireframe.png" alt="Wireframe Icon" class="divine-mood-icon">
+            <img src="img/palette.png" alt="Palette" class="divine-mood-icon">
+            <img src="img/adobexd.png" alt="Adobe XD" class="divine-mood-icon">
+            </p>
+    <!--Links-->
+            <p>
+            <a href="https://www.figma.com/" target="_blank">Figma</a> |
+            <a href="https://www.adobe.com/products/xd.html" target="_blank">Adobe XD</a> |
+            <a href="https://github.com/DivineMobote" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </div>
+<!--End Divine's Card-->
+
+<!--Ayden's card-->
+    <div id="A_div" class="card">
+        <h2>Ayden Hocking</h2>
+        <p>Scrum Master</p>
+        <button id="A_button" onclick="toggleBioAndImg('bio4', 'A_img')">Show Bio</button>
+        <br>
+<!--Image-->
+        <div class="image-container">
+            <img id="A_img" src="/group_bio/img/Ayden_Bio_Image.png" alt="Ayden's Bio Img" style="display: none; border-radius: 10px;">
+        </div>
+<!--Bio-->
+        <div class="bio-section">
+            <p id="bio4" class="bio" style="display: none;">
+                Ayden combines his expertise in Full Stack Development with his leadership, goal-striving, and
+                conflict-resolution skills to deliver optimal Scrum Master coordination for a highly skilled team.
+            </p>
+        </div>
+<!--Tools-->
+        <div class="tools-section">
+            <h3 id="FavTools" style="display: none;">Favorite Tools:</h3>
+            <ul id="FavToolsList" class="bio" style="display: none;">
+                <li><strong>Computer Vision:</strong> OpenCV</li>
+                <li><strong>Audio Processing:</strong> WaveformSDK</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Code Editor:</strong> VS Code</li>
+                <li><strong>Packaging:</strong> PyInstaller</li>
+                <li><strong>Version Control:</strong> Git</li>
+            </ul>
+        </div>
+<!--Links-->
+        <div class="links-section">
+            <h3 id="MyLinks" style="display: none;">Links:</h3>
+            <ul id="MyLinksList" class="bio" style="display: none;">
+                <li><a href="https://github.com/AydenHocking" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ayden-hocking-11829928a" target="_blank">LinkedIn</a></li>
+                <li><a href="http://awstest1ah.s3-website.us-east-2.amazonaws.com" target="_blank">Personal Site (Not Updated)</a></li>
+            </ul>
+        </div>
+    </div>
+<!--End Ayden's Card-->
+
+<!--Shyam's card-->
+    <div class="card shyam-card" id="shyam-card">
+        <h2>Shyam Pedibhotla</h2>
+        <p>Product Owner</p>
+        <button onclick="toggleShyamBio('bio5', 'shyam-card')">Show Bio</button>
+        <div id="bio5" class="bio">
+    <!--Image-->
+            <img src="img/shyam.jpeg" alt="Shyam Avatar" class="shyam-bio-avatar">
+    <!--Bio-->
+            <p><strong>About:</strong><br>
+                Shyam brings together his solid understanding of payments technology and agile product management with great teamwork, smart backlog planning, and a clear sense of direction to support his team as an effective and thoughtful Product Owner.</p>
+    <!--MoodBoard-->
+            <p><strong>MoodBoard:</strong><br>
+            <img src="img/alan.jpg" alt="Alan Turing" class="shyam-mood-icon">
+            <img src="img/github.png" alt="Github Logo" class="shyam-mood-icon">
+            <img src="img/postman.png" alt="Postman" class="shyam-mood-icon">
+            <img src="img/coderdesk.jpg" alt="LoFi Coder Desk" class="shyam-mood-icon">
+            </p>
+    <!--Links-->
+            <p>
+            <a href="https://www.postman.com/" target="_blank">Postman</a> |
+            <a href="https://realpython.com/" target="_blank">Real Python</a> |
+            <a href="https://github.com/shyamp1-byte" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </div>
+<!--End Shyam's Card-->
+</div>
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="page2">
+    <div id="vision" class="container" style="display: none;">
+        <h2>Group 15's Mission Statement</h2>
+        <p>
+            At Group 15 we strive to build modern, innovative, and creative solutions to any digital problem.
+            We are committed to continuous growth, collaboration,
+            and improvement throughout all areas of software development, delivering only the best products
+            for realistic problems within any online space. Group 15 places their stakeholders first any development
+            opportunity, creating the ideal culture for a collaborative user environment.
+        </p>
+        <h2>
+            Group 15's Goals Include
+        </h2>
+        <ul>
+            <li>Innovation</li>
+            <li>Collaboration</li>
+            <li>Adaptive Solutions</li>
+        </ul>
+        <div id="contact" class="container" style="display: none;">
+            <h2>Contact</h2>
+            <p>Group15Development@uncc.edu</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
