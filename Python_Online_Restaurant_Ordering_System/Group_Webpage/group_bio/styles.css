@@ -1,0 +1,493 @@
+/* General page styling */
+body {
+    font-family: 'Verdana', Geneva, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for team logo image */
+.team-logo {
+    width: 150px; /* Adjust the size as needed */
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* Menu button styling */
+header nav {
+    margin-top: 10px;
+}
+
+header nav button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+header nav button:hover {
+    background: #0056b3;
+}
+
+/* Flex container for team bios and vision sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card styling for individual team bios */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+/* Initially hide bio details */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+/*Aydens Styles*/
+.image-container img {
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.image-container img:hover {
+    width: 285px;
+    height: auto;
+}
+.tools-section ul, .links-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.tools-section li, .links-section li {
+    margin-bottom: 5px;
+}
+.tools-section li:hover{
+    border:2px solid darkgreen;
+    border-radius: 50px;
+}
+.links-section a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links-section a:hover {
+    font-size: larger;
+    color: darkgreen;
+    text-decoration: underline;
+}
+/*End Ayden's Styles*/
+
+/*Divine's Bio Styles*/
+.divine-bio-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50% 50% 40% 40%;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #ffb6c1;
+}
+.divine-card {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+.divine-card.expanded {
+    background-color: #ffeaf3;
+}
+.divine-mood-icon {
+    width: 40px;
+    margin: 5px;
+}
+/*Divine's Bio Styles*/
+
+
+/*Shyam's Bio Styles*/
+.shyam-bio-avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 45% 45% 35% 35%;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #dea233;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.shyam-bio-avatar:hover {
+    transform: scale(1.05);
+}
+
+.shyam-card {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.shyam-card.expanded {
+    background-color: #f4ce88;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.shyam-mood-icon {
+    width: 44px;
+    margin: 8px;
+    transition: transform 0.2s ease;
+}
+.shyam-mood-icon:hover {
+    transform: scale(1.1);
+}
+/*Shyam's Bio Styles*/
+
+/* Deeksha's Card */
+.deeksha-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.deeksha-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.deeksha-name {
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0 0 5px;
+    text-shadow: none;
+}
+
+.deeksha-title {
+    color: #666;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.deeksha-button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.deeksha-button:hover {
+    background: #0056b3;
+    transform: none;
+}
+
+
+.deeksha-card.expanded {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+}
+
+.deeksha-card.expanded .deeksha-button {
+    background: linear-gradient(to right, #ff7b9c, #ff7676);
+    border-radius: 25px;
+}
+
+.deeksha-bio {
+    display: none;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.deeksha-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ff7b9c;
+    margin: 0 auto 15px;
+    display: block;
+    object-fit: cover;
+}
+
+.deeksha-bio-text {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 3px solid #6a7ba2;
+}
+
+.moodboard-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.moodboard-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.moodboard-icons img:hover {
+    transform: scale(1.2);
+}
+
+.deeksha-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.deeksha-links a {
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+
+.kaggle-link {
+    background: #20beff;
+    color: white;
+}
+
+.github-link {
+    background: #333;
+    color: white;
+}
+
+.python-link {
+    background: #ff7b9c;
+    color: white;
+}
+
+.deeksha-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+/* End Deeksha's Card */
+
+/* Alejandro's Bio Styles */
+.alejandro-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    /* No transition property to prevent hover animations */
+}
+
+.alejandro-name {
+    font-weight: bold;
+    color: black;
+    margin: 0 0 10px;
+}
+
+.alejandro-title {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.alejandro-button {
+    /*background: black;*/
+    /*color: darkolivegreen;*/
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hover-tan:hover {
+    background-color: tan !important;
+}
+
+.hover-normal:hover {
+    background-color: #0056b3 !important;
+}
+
+.alejandro-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Section Headers for Favorite Tools and Links */
+.section-header {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Bio Text Color */
+#bio-alejandro {
+    color: black;
+}
+
+/* Favorite Tools list items */
+#tools-alejandro li {
+    color: black;
+    font-weight: normal;
+    list-style: square;
+    margin-inside: 5px 5;
+}
+
+#tools-alejandro li strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+/* Change favorite tools text color on hover */
+#tools-alejandro li:hover {
+    color: navajowhite;
+    border: none;
+}
+
+/* External Links styling */
+#links-alejandro li a {
+    color: black;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* Change link color on hover */
+#links-alejandro li a:hover {
+    color: navajowhite;
+    font-weight: bold;
+}
+
+/* End Alejandro's Bio Style */
+
+/*Page 2*/
+#page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    color: #1f1f1f;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#page2 #vision {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 1500px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    margin: 0 auto;
+}
+
+#page2 #vision h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+#page2 #vision p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#page2 #vision ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#page2 #vision ul li::before {
+    content: "• ";
+    color: #3498db;
+}
+
+#page2 #vision ul li {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+#page2 #contact {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    border-right: 5px solid #2980b9;
+    display: none;
+}
+
+#page2 #contact h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+#page2 #contact p {
+    font-size: 1rem;
+    color: #2c3e50;
+}
